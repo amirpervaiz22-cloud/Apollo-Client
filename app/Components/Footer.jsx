@@ -17,19 +17,19 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mb-24 px-10">
           <div>
             <div className="flex items-center gap-3 mb-10 group">
-              <div className="w-14 h-14  rounded-full flex items-center justify-center text-white shadow-lg shadow-blue-900/40">
+              <div className="w-22 h-22  rounded-full flex items-center justify-center text-white shadow-lg shadow-blue-900/40">
                 <img
                   className="rounded-full"
-                  src="./logo apollo.png"
+                  src="./logo.jpeg"
                   alt="Logo"
                 />
               </div>
               <div className="flex flex-col">
-                <span className="text-xl font-black tracking-tight leading-none uppercase">
+                <span className="text-2xl font-black tracking-tight leading-none uppercase">
                   APOLLO
                 </span>
-                <span className="text-[10px] font-black tracking-[0.4em] text-blue-500 uppercase">
-                  Medical
+                <span className="text-[10px] tracking-[0.4em] text-emerald-400 font-extrabold uppercase">
+                  Medical Billing
                 </span>
               </div>
             </div>
@@ -48,7 +48,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-sm font-black uppercase tracking-[0.3em] text-blue-500 mb-10">
+            <h4 className="text-sm font-black uppercase tracking-[0.3em] text-emerald-400 mb-10">
               Solutions
             </h4>
             <ul className="space-y-6 text-slate-400 font-bold text-lg">
@@ -86,7 +86,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-sm font-black uppercase tracking-[0.3em] text-blue-500 mb-10">
+            <h4 className="text-sm font-black uppercase tracking-[0.3em] text-emerald-400 mb-10">
               Company
             </h4>
             <ul className="space-y-4 text-slate-400 font-bold text-lg">

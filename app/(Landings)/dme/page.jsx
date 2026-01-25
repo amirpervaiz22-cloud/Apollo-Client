@@ -7,40 +7,53 @@ import {
   Headphones,
 } from "lucide-react";
 import Link from "next/link";
+import DmeFaqSchema from "@/app/SEOSchema/FAQ";
+import Image from "next/image";
+import ImageCard from "@/app/Components/ImageCard";
 
 const page = () => {
   return (
     <div className="font-sans text-slate-900 bg-white">
       {/* --- HERO SECTION --- */}
-      <header className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white py-20 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
-          <div className="md:w-2/3">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-              #1 DME Billing Services in{" "}
-              <span className="text-blue-300">
-                Rancho Cucamonga & California
-              </span>
-            </h1>
-            <p className="text-xl mb-8 opacity-90">
-              Maximize reimbursements with Apollo Medical Billing — a
-              California-based medical billing company specializing in DME
-              revenue cycle management services, medical billing software
-              workflows, and HCPCS Level II medical coding services for
-              suppliers and clinics.
-            </p>
-            <div className="flex gap-4">
-              <Link
-                href={"/contact"}
-                className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition"
-              >
-                Get a Free Audit
-              </Link>
-              <Link
-                href={"/services"}
-                className="border-2 border-white hover:bg-white hover:text-blue-900 font-bold py-3 px-8 rounded-lg transition"
-              >
-                View Services
-              </Link>
+      <header className="relative bg-linear-to-r from-blue-900 to-blue-700 text-white ">
+        <div className="relative h-fit">
+          <Image
+            src={"/Wheelchair.png"}
+            fill
+            quality={100}
+            alt="Medical Professional using RCM tools"
+            className="object-cover z-1 hidden md:block"
+          />
+          <div className="absolute inset-0 bg-slate-800/40 z-1"></div>
+          <div className="z-1 relative max-w-6xl py-20 px-6 mx-auto flex flex-col md:flex-row items-center">
+            <div className="md:w-2/3">
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+                #1 DME Billing Services in{" "}
+                <span className="text-blue-300">
+                  Rancho Cucamonga, California
+                </span>
+              </h1>
+              <p className="text-xl mb-8 opacity-90">
+                Maximize reimbursements with Apollo Medical Billing a
+                California-based medical billing company specializing in DME
+                revenue cycle management services, medical billing software
+                workflows, and HCPCS Level II medical coding services for
+                suppliers and clinics.
+              </p>
+              <div className="flex gap-4">
+                <Link
+                  href={"/contact"}
+                  className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition"
+                >
+                  Get a Free Audit
+                </Link>
+                <Link
+                  href={"/services"}
+                  className="border-2 border-white hover:bg-white hover:text-blue-900 font-bold py-3 px-8 rounded-lg transition"
+                >
+                  View Services
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -60,16 +73,15 @@ const page = () => {
           </div>
         </div>
       </section>
-      
+
       <section className="py-10  bg-blue-900 relative overflow-hidden">
-          
-          <iframe
-            src="https://player.mux.com/6B4HMldBb01prDcDy63OAi7H1LAlSj8uzOtnE8Oh5f00U"
-            className="w-[65%] mx-auto rounded-lg aspect-video"
-            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
-            allowFullScreen
-          ></iframe>
-        </section>
+        <iframe
+          src="https://player.mux.com/6B4HMldBb01prDcDy63OAi7H1LAlSj8uzOtnE8Oh5f00U?accent-color=%23094acc"
+          className="w-[65%] mx-auto rounded-lg aspect-video"
+          allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
+          allowFullScreen
+        ></iframe>
+      </section>
 
       {/* --- SERVICES / SEO CONTENT --- */}
       <section className="py-20 px-6 max-w-6xl mx-auto">
@@ -101,7 +113,7 @@ const page = () => {
               Our certified DME billing specialists manage complex Medicare,
               Medi-Cal, and commercial payer rules, including:
             </p>
-            <p>
+            <h1>
               <ul>
                 <li>
                   <strong>HCPCS Level II coding accuracy</strong> to support
@@ -127,7 +139,7 @@ const page = () => {
                 approvals, reduced denials, and{" "}
                 <strong>maximum reimbursement</strong>.
               </p>
-            </p>
+            </h1>
           </div>
 
           {/* Card 2 */}
@@ -136,7 +148,7 @@ const page = () => {
               <ShieldCheck size={24} />
             </div>
             <h3 className="text-xl font-bold mb-3">Denial Management</h3>
-            <p className="text-slate-600 group-hover:text-gray-100">
+            <h1 className="text-slate-600 group-hover:text-gray-100">
               DME claims face some of the highest denial rates in healthcare.
               Our denial management services proactively eliminate common errors
               before submission.
@@ -158,7 +170,7 @@ const page = () => {
                   initial denial rate across DME claims
                 </li>
               </ul>
-            </p>
+            </h1>
           </div>
 
           {/* Card 3 */}
@@ -167,7 +179,7 @@ const page = () => {
               <Headphones size={24} />
             </div>
             <h3 className="text-xl font-bold mb-3">Real-Time Support</h3>
-            <p className="text-slate-600 group-hover:text-gray-100">
+            <h1 className="text-slate-600 group-hover:text-gray-100">
               Unlike offshore billing companies, Apollo provides 100% US-based
               support from our Rancho Cucamonga headquarters.
               <ul>
@@ -188,7 +200,7 @@ const page = () => {
                   cycles to ensure faster responses and follow-ups
                 </li>
               </ul>
-            </p>
+            </h1>
           </div>
         </div>
       </section>
@@ -208,28 +220,37 @@ const page = () => {
               competitive, and profitable under the latest 2026 CMS and Medi-Cal
               regulations.
             </p>
-            <p>
+            <h1>
               <p>
                 <strong>Our team specializes in billing for:</strong>
               </p>
               <ul>
                 <li>Wheelchairs &amp; Mobility Equipment</li>
                 <li>CPAP &amp; Sleep Therapy Devices</li>
-                <li>Oxygen Systems</li>
-                <li>Diabetic Testing Supplies</li>
+                
+                
               </ul>
               <p>
                 Each claim is coded, audited, and monitored to ensure compliance
-                with
+                with{" "}
                 <strong>
                   medical billing and coding services best practices
                 </strong>
                 , payer policies, and{" "}
                 <strong>California regulatory requirements</strong>.
               </p>
-            </p>
+            </h1>
+          </div>
+          <div className="container md:flex md:gap-10 ">
+            <ImageCard src="/Wheelchairs & Mobility Equipment.png" title="Wheel Chair" alt="An Electric Wheelchair" />
+            <ImageCard src="/BiPAP.png" title="BiPAP Device" alt="An BiPAP Device"/>
+            <ImageCard src="/CPAP.png" title="CPAP Machine" alt="A CPAP Device"/>
+          
           </div>
         </div>
+      </section>
+      <section>
+        <DmeFaqSchema />
       </section>
 
       {/* --- FOOTER / CTA --- */}

@@ -17,32 +17,32 @@ const Navbar = () => {
   ];
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className=" font-sans text-slate-900 bg-white selection:bg-blue-100 selection:text-blue-900 antialiased">
+    <div className=" font-sans text-slate-900 bg-blue selection:bg-blue-100 selection:text-white antialiased">
       {/* Navbar */}
       <nav
-        className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${isScrolled ? "bg-white shadow-2xl py-3 border-b border-slate-100" : "bg-transparent py-6 md:py-8"}`}
+        className={`fixed top-0 left-0 w-full z-100 transition-all duration-500 ${isScrolled ? "bg-blue-600 shadow-2xl py-3 border-b border-slate-100" : "bg-transparent py-6 md:py-8"}`}
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
           <Link className="flex items-center gap-3 group" href={"/"}>
-            <div className="w-14 h-14  rounded-full flex items-center justify-center text-white shadow-xl group-hover:rotate-12 transition-trans<form duration-300">
+            <div className="w-22 h-22  rounded-full flex items-center justify-center text-white shadow-2xl group-hover:rotate-12 transition-trans<form duration-300">
               <img
                 className="rounded-full"
-                src="./logo apollo.png"
+                src="./logo.jpeg"
                 alt="Apollo Logo"
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl font-black tracking-tight leading-none">
+              <span className={`text-2xl font-black text-blue-600 tracking-tight leading-none ${isScrolled && "text-white"}`}>
                 APOLLO
               </span>
-              <span className="text-xs font-black tracking-[0.4em] text-blue-600 uppercase">
-                Medical
+              <span className={`text-xs font-black tracking-[0.4em] text-black uppercase ${isScrolled && "text-emerald-400"}`}>
+                Medical Billing
               </span>
             </div>
           </Link>
@@ -54,18 +54,18 @@ const Navbar = () => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm font-black uppercase tracking-[0.2em] transition-all relative group py-2 ${isActive ? "text-blue-700" : "text-slate-700 hover:text-blue-700"}`}
+                  className={`text-sm select-none font-black uppercase tracking-[0.2em] transition-all relative group py-2 ${isActive ? "text-blue-700" : "text-slate-700 hover:text-blue-700"} ${isScrolled && "text-white hover:text-white"}`}
                 >
                   {link.name}
                   <span
-                    className={`absolute bottom-0 left-0 h-0.5 bg-blue-600 transition-all duration-300 ${isActive ? "w-full" : "w-0 group-hover:w-full"}`}
+                    className={`absolute bottom-0 left-0 h-0.5 bg-emerald-400 transition-all duration-300 ${isActive ? "w-full" : "w-0 group-hover:w-full"}`}
                   ></span>
                 </Link>
               );
             })}
             <Link
               href="/contact"
-              className="bg-blue-700 px-3 py-3 tracking-widest font-semibold rounded-lg  text-white shadow-blue-200 hover:bg-blue-800 shadow-md transition-all active:scale-95"
+              className={`bg-blue-700 px-3 select-none py-3 tracking-widest font-semibold rounded-lg text-white hover:bg-blue-800 shadow transition-all active:scale-95 ${isScrolled && "bg-emerald-600 hover:bg-emerald-700"}`}
             >
               Free Consultation
             </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-2xl border-t border-slate-100 flex flex-col p-10 gap-8 animate-in slide-in-from-top-4 duration-300 h-[calc(100vh-80px)] overflow-y-auto">
+          <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-2xl border-t border-slate-100 flex flex-col p-10 gap-8 animate-in slide-in-from-top-4 duration-300 h-[calc(100vh-80px)] overflow-y-auto z-100">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (

@@ -64,7 +64,7 @@ const VirtualConsultant = ({
                 />
                 <div className="absolute -bottom-0.5 -right-0.5 w-2.5 h-2.5 bg-green-500 border-2 border-blue-800 rounded-full"></div>
               </div>
-              <span className="font-semibold text-sm">Sarah Johnson, BDM</span>
+              <span className="font-semibold text-sm">Sarah Johnson, Virtual Assistant</span>
             </div>
             <button
               onClick={() => setIsOpen(false)}

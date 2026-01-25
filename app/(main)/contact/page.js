@@ -121,8 +121,8 @@ const page = () => {
                     "I'll personally review your practice analysis and reach out
                     within 2 hours to discuss the next steps."
                   </p>
-                  <p className="font-black text-blue-700 uppercase tracking-[0.2em] text-sm">
-                    — Sarah Johnson, BDM
+                  <p className="font-black text-blue-700 uppercase tracking-[0.2em] text-xs">
+                    — Sarah Johnson, Virtual Assistant
                   </p>
                 </div>
               </div>
