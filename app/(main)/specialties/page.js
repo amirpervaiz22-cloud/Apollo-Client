@@ -67,7 +67,10 @@ const page = () => {
 
           <div className="max-w-4xl mx-auto mb-20">
             <section className="py-10 rounded-lg  bg-blue-900 relative overflow-hidden">
-              <h1 className="text-3xl text-white font-bold px-10 pb-5">Have a look at our <span className="text-emerald-400">Specialties</span></h1>
+              <h1 className="text-3xl text-white font-bold px-10 pb-5">
+                Have a look at our{" "}
+                <span className="text-emerald-400">Specialties</span>
+              </h1>
               <iframe
                 src="https://player.mux.com/MbIzOLcIlz3zxmdUumrXrV9vjF9jm02jvb6fBrewJnX8?accent-color=%23094acc"
                 className="w-[65%] mx-auto rounded-lg aspect-video"
@@ -77,20 +80,20 @@ const page = () => {
             </section>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 px-2">
             {[
-              { title: "", name: "Primary Care", icon: <UserCheck /> },
               { title: "", name: "Cardiology", icon: <Activity /> },
+              { title: "", name: "Dermatology", icon: <Activity /> },
+              { title: "dme", name: "DME Providers", icon: <TrendingUp /> },
+              { title: "", name: "Internal Medicine", icon: <FileText /> },
               { title: "", name: "Neurology", icon: <Zap /> },
               { title: "", name: "Ophthalmology", icon: <Stethoscope /> },
               { title: "", name: "Orthopedics", icon: <CheckCircle2 /> },
-              { title: "", name: "Internal Medicine", icon: <FileText /> },
+              { title: "", name: "Primary Care", icon: <UserCheck /> },
               { title: "", name: "Pediatrics", icon: <Heart /> },
               { title: "", name: "Psychiatry", icon: <Users /> },
-              { title: "", name: "Dermatology", icon: <Activity /> },
-              { title: "", name: "Urgent Care", icon: <Clock /> },
               { title: "", name: "Surgery Center", icon: <ClipboardCheck /> },
-              { title: "dme", name: "DME Providers", icon: <TrendingUp /> },
+              { title: "", name: "Urgent Care", icon: <Clock /> },
             ].map((spec, idx) => (
               <Link
                 key={idx}

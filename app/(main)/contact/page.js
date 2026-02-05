@@ -1,11 +1,10 @@
-"use client"
-import Button from '@/app/Components/Button';
-import SectionHeading from '@/app/Components/SectionHeading';
-import { CheckCircle2, Mail, MapPin, Phone } from 'lucide-react';
-import React, { useState } from 'react'
-import { toast } from 'react-toastify';
+"use client";
+import Button from "@/app/Components/Button";
+import SectionHeading from "@/app/Components/SectionHeading";
+import { CheckCircle2, Mail, MapPin, Phone } from "lucide-react";
+import React, { useState } from "react";
+import { toast } from "react-toastify";
 const page = () => {
- 
   const [submitted, setSubmitted] = useState(false);
   const [name, setName] = useState("");
   const [practice, setPractice] = useState("");
@@ -43,7 +42,6 @@ const page = () => {
         setSubmitted(true);
         toast.success("Your inquiry has been sent!");
       } else {
-        
       }
     } catch (error) {
       console.error("Error sending email:", error);
@@ -63,49 +61,61 @@ const page = () => {
               />
 
               <div className="space-y-10 mt-16">
-                <div className="flex gap-8 group">
-                  <div className="w-16 h-16 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm shadow-blue-200">
-                    <Phone size={28} />
-                  </div>
-                  <div>
-                    <h4 className="font-black text-slate-900  md:text-xl text-[17px] mb-1 uppercase tracking-wider">
-                      Direct Line
-                    </h4>
-                    <p className="text-2xl font-medium text-slate-600">
-                      (909) 460-8170
-                    </p>
-                    <p className="text-sm text-slate-400 mt-1 font-bold">
-                      Mon - Fri • 8AM - 6PM EST
-                    </p>
-                  </div>
+                <div>
+                  <a href="tel:9094608170">
+                    <div className="flex gap-8 group">
+                      <div className="w-16 h-16 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm shadow-blue-200">
+                        <Phone size={28} />
+                      </div>
+                      <div>
+                        <h4 className="font-black text-slate-900  md:text-xl text-[17px] mb-1 uppercase tracking-wider">
+                          Direct Line
+                        </h4>
+                        <p className="text-2xl font-medium text-slate-600">
+                          (909) 460-8170
+                        </p>
+                        <p className="text-sm text-slate-400 mt-1 font-bold">
+                          Mon - Fri • 8AM - 6PM EST
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-                <div className="flex gap-8 group">
-                  <div className="w-16 h-16 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm shadow-blue-200">
-                    <Mail size={28} />
-                  </div>
-                  <div>
-                    <h4 className="font-black text-slate-900 md:text-xl text-[17px] mb-1 uppercase tracking-wider">
-                      Email Us
-                    </h4>
-                    <p className="md:text-2xl text-sm font-medium text-slate-600">
-                      info@apollomedbilling.com
-                    </p>
-                  </div>
+                <div>
+                  <a href="mailto:info@apollomedbilling.com">
+                    <div className="flex gap-8 group">
+                      <div className="w-16 h-16 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm shadow-blue-200">
+                        <Mail size={28} />
+                      </div>
+                      <div>
+                        <h4 className="font-black text-slate-900 md:text-xl text-[17px] mb-1 uppercase tracking-wider">
+                          Email Us
+                        </h4>
+                        <p className="md:text-2xl text-sm font-medium text-slate-600">
+                          info@apollomedbilling.com
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
-                <div className="flex gap-8 group">
-                  <div className="w-16 h-16 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm shadow-blue-200">
-                    <MapPin size={28} />
-                  </div>
-                  <div>
-                    <h4 className="font-black text-slate-900 md:text-xl text-[17px] mb-1 uppercase tracking-wider">
-                      Our HQ
-                    </h4>
-                    <p className="md:text-2xl text-sm font-medium text-slate-600 leading-tight">
-                      9567 Arrow Route, Suite A
-                      <br />
-                      Rancho Cucamonga, CA 91730
-                    </p>
-                  </div>
+                <div>
+                  <a href="https://maps.app.goo.gl/Uf4Pb4YFB6xBXZYe7" target="_blank">
+                    <div className="flex gap-8 group">
+                      <div className="w-16 h-16 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm shadow-blue-200">
+                        <MapPin size={28} />
+                      </div>
+                      <div>
+                        <h4 className="font-black text-slate-900 md:text-xl text-[17px] mb-1 uppercase tracking-wider">
+                          Our HQ
+                        </h4>
+                        <p className="md:text-2xl text-sm font-medium text-slate-600 leading-tight">
+                          9567 Arrow Route, Suite A
+                          <br />
+                          Rancho Cucamonga, CA 91730
+                        </p>
+                      </div>
+                    </div>
+                  </a>
                 </div>
               </div>
 
@@ -296,5 +306,4 @@ const page = () => {
   );
 };
 
-
-export default page
+export default page;

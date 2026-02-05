@@ -208,44 +208,58 @@ const page = () => {
       {/* --- SEO KEYWORD RICH CONTENT BLOCK --- */}
       <section className="py-20 bg-blue-50 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">
-            Why California DME Companies Choose Apollo
-          </h2>
+          <h2 className="text-3xl font-bold mb-6">DME Billing Services</h2>
           <div className="text-left text-slate-700 space-y-4">
             <p>
-              As a trusted medical billing services company in California,
-              Apollo understands the nuances that national and out-of-state
-              firms overlook. From Rancho Cucamonga and Los Angeles to San Diego
-              and San Francisco, we help DME providers stay compliant,
-              competitive, and profitable under the latest 2026 CMS and Medi-Cal
-              regulations.
+              Apollo, a medical billing company in California, offers tailored
+              services to DME providers across major cities across the nation.
+              We ensure compliance and profitability under 2026 CMS and Medi-Cal
+              rules.
             </p>
             <h1>
               <p>
                 <strong>Our team specializes in billing for:</strong>
               </p>
-              <ul>
-                <li>Wheelchairs &amp; Mobility Equipment</li>
-                <li>CPAP &amp; Sleep Therapy Devices</li>
-                
-                
+              <ul className="list-disc">
+                <li>Ambulatory devices</li>
+                <li>Beds and Patient room accessories</li>
+                <li>Compression Devices</li>
+                <li>
+                  Electrotherapy Products like TENS units and Muscle
+                  stimulators
+                </li>
+                <li>High rehab customized wheelchairs.</li>
+                <li>Mattress over lays (regular and low loss APM)</li>
+                <li>Motorized Wheelchairs and scooters</li>
+                <li>Orthotics (Off the shelf and customized braces)</li>
+                <li>Respiratory Products</li>
+                <li>Sleep Therapy devices</li>
+                <li>Urological supplies</li>
               </ul>
+
               <p>
-                Each claim is coded, audited, and monitored to ensure compliance
-                with{" "}
-                <strong>
-                  medical billing and coding services best practices
-                </strong>
-                , payer policies, and{" "}
-                <strong>California regulatory requirements</strong>.
+                All claims are precisely coded, audited, and tracked for
+                adherence to <strong>National payer policies </strong>and
+                <strong> California regulatory standards.</strong>
               </p>
             </h1>
           </div>
           <div className="container md:flex md:gap-10 ">
-            <ImageCard src="/Wheelchairs & Mobility Equipment.png" title="Wheel Chair" alt="An Electric Wheelchair" />
-            <ImageCard src="/BiPAP.png" title="BiPAP Device" alt="An BiPAP Device"/>
-            <ImageCard src="/CPAP.png" title="CPAP Machine" alt="A CPAP Device"/>
-          
+            <ImageCard
+              src="/Wheelchairs & Mobility Equipment.png"
+              title="Wheel Chair"
+              alt="An Electric Wheelchair"
+            />
+            <ImageCard
+              src="/BiPAP.png"
+              title="BiPAP Device"
+              alt="An BiPAP Device"
+            />
+            <ImageCard
+              src="/CPAP.png"
+              title="CPAP Machine"
+              alt="A CPAP Device"
+            />
           </div>
         </div>
       </section>

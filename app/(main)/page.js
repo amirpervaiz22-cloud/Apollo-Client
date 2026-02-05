@@ -25,7 +25,7 @@ const App = () => {
   return (
     <div className=" font-sans text-slate-900 bg-white selection:bg-blue-100 selection:text-blue-900 antialiased">
       <div className="animate-in fade-in slide-in-from-bottom-2 duration-1000">
-        <section className="relative pt-32 pb-20 md:pb-40 bg-[#f8fafc] overflow-hidden">
+        <section className="relative pt-32 pb-10 md:pb-20 bg-[#f8fafc] overflow-hidden">
           {/* <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-50/40 -skew-x-12 translate-x-1/4 pointer-events-none"></div> */}
 
           <div className="relative h-fit">
@@ -84,7 +84,7 @@ const App = () => {
         </section>
 
         {/* Partners Logos */}
-        <div className="bg-white py-12 border-y border-slate-100">
+        {/* <div className="bg-white py-12 border-y border-slate-100">
           <div className="container mx-auto px-6">
             <p className="text-center text-slate-400 text-sm font-bold uppercase tracking-[0.2em] mb-8">
               Trusted by practices nationwide
@@ -97,7 +97,7 @@ const App = () => {
               <span className="text-2xl font-black">PRIORITY HEALTH</span>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Trusted Partner Section */}
         <section className="py-24 md:py-32 bg-white">
@@ -115,7 +115,7 @@ const App = () => {
               <div className="md:w-1/2">
                 <SectionHeading
                   title="Your Enterprise Medical Billing Partner"
-                  subtitle="Apollo delivers enterprise-level medical billing services in California and across the USA, integrating directly with your EHR practice management software, patient management system, and electronic health record systems (EHRs) to automate coding accuracy, reduce denial rates, and deliver 100% financial transparency.
+                  subtitle="Apollo delivers enterprise-level medical billing services in California and across the US, integrating directly with your EHR practice management software, patient management system, and electronic health record systems (EHRs) to automate coding accuracy, reduce denial rates, and deliver 100% financial transparency.
                   Our platform supports leading EHR companies, EMR systems list, patient portal, and advanced practice management software systems used by primary care, specialty, and DME providers."
                 />
               </div>
@@ -176,31 +176,31 @@ const App = () => {
               {[
                 {
                   icon: <FileText size={32} />,
-                  domain: "cfc",
+                  domain: "services",
                   title: "Certified Medical Coding",
                   desc: "Expert CPT/ICD-10 coding to ensure your services are fully reimbursed without compliance risk.",
                 },
                 {
                   icon: <TrendingUp size={32} />,
-                  domain: "rcm",
+                  domain: "services",
                   title: "Total RCM Management",
                   desc: "End-to-end revenue cycle management services covering scheduling, eligibility verification, coding, billing, denial recovery, patient payments, and final reconciliation.",
                 },
                 {
                   icon: <Zap size={32} />,
-                  domain: "adp",
+                  domain: "services",
                   title: "Aggressive Denial Pursuit",
                   desc: "We don't “follow up.” We appeal, escalate, and resolve complex payer denials using advanced RCM billing analytics.",
                 },
                 {
                   icon: <Clock size={32} />,
-                  domain: "ar",
+                  domain: "services",
                   title: "Aging AR Resolution",
                   desc: "Dedicated teams liquidate old balances, reduce AR days, and stabilize cash flow using forensic billing techniques.",
                 },
                 {
                   icon: <ClipboardCheck size={32} />,
-                  domain: "eligibility_verification",
+                  domain: "services",
                   title: "Eligibility Verification",
                   desc: "Proactive front-end verification using practice management software to prevent front-desk and authorization errors.",
                 },
@@ -296,7 +296,8 @@ const App = () => {
                 },
               ].map((item, idx) => (
                 <div key={idx} className="text-center group px-4">
-                  <div className="w-20 h-20 bg-white border-2 border-blue-600 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-8 text-2xl font-black group-hover:bg-blue-600 group-hover:text-white transition-all shadow-xl rotate-3 group-hover:rotate-0 duration-300">
+                  <div className="w-20 h-20 bg-white border-2 border-blue-600 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-8 text-2xl font-black group-hover:bg-blue-600 group-hover:text-white transition-all shadow-xl
+                   group-hover:rotate-6 duration-300">
                     {item.step}
                   </div>
                   <h4 className="font-bold text-slate-900 mb-4 text-lg leading-snug">

@@ -18,11 +18,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-10 group">
               <div className="w-22 h-22  rounded-full flex items-center justify-center text-white shadow-lg shadow-blue-900/40">
-                <img
-                  className="rounded-full"
-                  src="./logo.jpeg"
-                  alt="Logo"
-                />
+                <img className="rounded-full" src="./logo.jpeg" alt="Logo" />
               </div>
               <div className="flex flex-col">
                 <span className="text-2xl font-black tracking-tight leading-none uppercase">
@@ -34,16 +30,20 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-slate-400 mb-10 leading-relaxed font-semibold text-lg">
-              The nation’s premier enterprise-grade revenue cycle management company for high-volume healthcare practices.
+              The nation’s premier enterprise-grade revenue cycle management
+              company for high-volume healthcare practices.
             </p>
             <div className="flex gap-4">
               <div className="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-blue-600 cursor-pointer transition-all duration-300 border border-white/10">
-                <a href="mailto:info@apollomedbilling.com"><Mail size={20} /></a>
+                <a href="mailto:info@apollomedbilling.com">
+                  <Mail size={20} />
+                </a>
               </div>
               <div className="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-blue-600 cursor-pointer transition-all duration-300 border border-white/10">
-                <a href="tel:9094608170"><Phone size={20} /></a>
+                <a href="tel:9094608170">
+                  <Phone size={20} />
+                </a>
               </div>
-              
             </div>
           </div>
 
@@ -54,7 +54,7 @@ const Footer = () => {
             <ul className="space-y-6 text-slate-400 font-bold text-lg">
               <Link
                 className="hover:text-white block transition-colors cursor-pointer"
-                href={"/services"}
+                href={"/services#RCM"}
               >
                 Full-Stack RCM
               </Link>
@@ -68,7 +68,7 @@ const Footer = () => {
                 className="hover:text-white block transition-colors cursor-pointer"
                 href={"/services"}
               >
-                Forensic Audits
+                Frequent Denials
               </Link>
               <Link
                 className="hover:text-white block transition-colors cursor-pointer"
@@ -76,12 +76,12 @@ const Footer = () => {
               >
                 DME Billing
               </Link>
-              <Link
+              {/* <Link
                 className="hover:text-white block transition-colors cursor-pointer"
                 href={"/services"}
               >
                 Credentialing
-              </Link>
+              </Link> */}
             </ul>
           </div>
 
@@ -92,7 +92,7 @@ const Footer = () => {
             <ul className="space-y-4 text-slate-400 font-bold text-lg">
               <Link
                 className="hover:text-white block transition-colors cursor-pointer"
-                href={"/about"}
+                href={"/about#Mission_Vision"}
               >
                 Our Mission
               </Link>
@@ -104,16 +104,22 @@ const Footer = () => {
               </Link>
               <Link
                 className="hover:text-white block transition-colors cursor-pointer"
-                href={"/contact"}
+                href={"/careers"}
               >
                 Careers
               </Link>
-              <li className="hover:text-white  transition-colors cursor-pointer">
+              <Link
+                href={"/about#Privacy_Security"}
+                className="hover:text-white block  transition-colors cursor-pointer"
+              >
                 HIPAA Standards
-              </li>
-              <li className="hover:text-white transition-colors cursor-pointer">
+              </Link>
+              <Link
+                href={"/about#Privacy_Security"}
+                className="hover:text-white block transition-colors cursor-pointer"
+              >
                 Privacy & Security
-              </li>
+              </Link>
             </ul>
           </div>
         </div>
@@ -124,14 +130,13 @@ const Footer = () => {
             free revenue analysis.
           </p>
           <div className="text-center">
-
-          <Link
-            className="block px-3 py-4 rounded-lg  text-sm font-semibold uppercase tracking-widest shadow-2xl bg-blue-700 text-white hover:bg-blue-800  transition-all active:scale-95"
-            href={"/contact"}
+            <Link
+              className="block px-3 py-4 rounded-lg  text-sm font-semibold uppercase tracking-widest shadow-2xl bg-blue-700 text-white hover:bg-blue-800  transition-all active:scale-95"
+              href={"/contact"}
             >
-            Get Free Audit
-          </Link>
-              </div>
+              Get Free Audit
+            </Link>
+          </div>
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8">

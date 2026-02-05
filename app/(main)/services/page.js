@@ -51,8 +51,8 @@ const page = () => {
               allowFullScreen
             ></iframe>
           </section>
-
-          <div className="space-y-40 mt-32 px-5 mb-20">
+            
+          <div className="space-y-40 mt-32 px-5 mb-20" id= "RCM">
             {[
               {
                 title: "Full-Stack Revenue Cycle Management",
@@ -67,8 +67,8 @@ const page = () => {
                 img: "Full-Stack Revenue Cycle Management1.jpg",
                 reverse: false,
               },
-              {
-                title: "Frequent Denial & AR Management",
+              { 
+                title: "Frequent Denial & AR Management" ,
                 desc: "Frequent Denial & AR Services our denial management services target unpaid or underpaid claims. Using certified coding and medical billing audit services, we recover revenue that other companies ignore.",
                 benefits: [
                   "Aggressive appeal strategies",
@@ -79,6 +79,7 @@ const page = () => {
                 img: "forenic denial.png",
                 reverse: true,
               },
+              
               {
                 title: "DME & Specialty Billing Solutions",
                 desc: "Apollo delivers high-volume DME billing services, podiatry billing services, and specialty billing solutions for clinics across California and USA.",
