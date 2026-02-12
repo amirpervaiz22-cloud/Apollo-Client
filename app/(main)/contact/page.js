@@ -1,6 +1,6 @@
 "use client";
-import Button from "@/app/Components/Button";
-import SectionHeading from "@/app/Components/SectionHeading";
+import Button from "../../Components/Button";
+import SectionHeading from "../../Components/SectionHeading";
 import { CheckCircle2, Mail, MapPin, Phone } from "lucide-react";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
@@ -28,7 +28,7 @@ const page = () => {
     console.log(payload);
 
     try {
-      const response = await fetch("http://localhost:5000/newLead", {
+      const response = await fetch("/api/newLead", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

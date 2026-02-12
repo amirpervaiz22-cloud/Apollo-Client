@@ -53,7 +53,7 @@ const page = () => {
     try {
       setLoading(true);
 
-      const response = await fetch("http://localhost:5000/jobApplication", {
+      const response = await fetch("/api/jobApplication", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

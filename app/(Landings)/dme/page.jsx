@@ -7,9 +7,9 @@ import {
   Headphones,
 } from "lucide-react";
 import Link from "next/link";
-import DmeFaqSchema from "@/app/SEOSchema/FAQ";
+import DmeFaqSchema from "../../SEOSchema/FAQ";
 import Image from "next/image";
-import ImageCard from "@/app/Components/ImageCard";
+import ImageCard from "../../Components/ImageCard";
 
 const page = () => {
   return (

@@ -3,6 +3,9 @@ import { withNextVideo } from "next-video/process";
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
+  images: {
+    qualities: [25, 50, 75, 100],
+  },
 };
 
 export default withNextVideo(nextConfig);

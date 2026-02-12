@@ -1,4 +1,4 @@
-import VirtualConsultant from "@/app/Components/VirtualConsultant";
+import VirtualConsultant from "../../Components/VirtualConsultant";
 import { CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -45,14 +45,14 @@ const page = () => {
           <section className="py-10 px-10 bg-blue-900 relative overflow-hidden">
             <h1 className="text-3xl mb-5 text-white font-black">Services at <span className="text-emerald-400">Apollo Medical Billing</span></h1>
             <iframe
-              src="https://player.mux.com/NhIw3fSXZH8jSXRZSwC5WHPI029UK6ZnJYo6FJBVX02Ss"
+              src="https://player.mux.com/00klWQ1sEIAx01T5mRplMoPIv7sGYr6gnLRdbUTPiMho00?accent-color=%23094acc"
               className="w-[65%] mx-auto rounded-lg aspect-video"
               allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
               allowFullScreen
             ></iframe>
           </section>
             
-          <div className="space-y-40 mt-32 px-5 mb-20" id= "RCM">
+          <div className="space-y-40 mt-32 px-5 mb-20">
             {[
               {
                 title: "Full-Stack Revenue Cycle Management",
@@ -66,6 +66,7 @@ const page = () => {
                 ],
                 img: "Full-Stack Revenue Cycle Management1.jpg",
                 reverse: false,
+                id:"RCM"
               },
               { 
                 title: "Frequent Denial & AR Management" ,
@@ -78,6 +79,7 @@ const page = () => {
                 ],
                 img: "forenic denial.png",
                 reverse: true,
+                id:"FD_AR"
               },
               
               {
@@ -91,6 +93,7 @@ const page = () => {
                 ],
                 img: "Human-Centric Financial.jpg",
                 reverse: false,
+                id:"DME"
               },
               {
                 title: "Eligibility & Patient Experience",
@@ -103,10 +106,12 @@ const page = () => {
                 ],
                 img: "Eligibility & Patient Experience.jpg",
                 reverse: true,
+                id:"eligibility"
               },
             ].map((s, idx) => (
               <div
                 key={idx}
+                id={`${s.id}`}
                 className={`flex flex-col lg:flex-row items-center gap-20 ${s.reverse &&"lg:flex-row-reverse" }`}
               >
                 <div className="lg:w-1/2 relative group">

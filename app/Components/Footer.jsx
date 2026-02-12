@@ -60,13 +60,13 @@ const Footer = () => {
               </Link>
               <Link
                 className="hover:text-white block transition-colors cursor-pointer"
-                href={"/services"}
+                href={"/services#FD_AR"}
               >
                 Denial Recovery
               </Link>
               <Link
                 className="hover:text-white block transition-colors cursor-pointer"
-                href={"/services"}
+                href={"/services#FD_AR"}
               >
                 Frequent Denials
               </Link>

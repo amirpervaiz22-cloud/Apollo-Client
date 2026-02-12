@@ -251,7 +251,7 @@ const App = () => {
             <span className="text-emerald-400">Apollo Medical</span>
           </h1>
           <iframe
-            src="https://player.mux.com/f02N4VKqRZVTIJNeufdKwQljS5Oc1xiI3GzojmmUs01wA?accent-color=%23094acc"
+            src="https://player.mux.com/E02a01SNszbzfa5x2M6YHi01J4JRNznqrSwMh2V00FSv9lY?accent-color=%23094ac"
             className="w-[65%] mx-auto rounded-lg aspect-video"
             allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
             allowFullScreen

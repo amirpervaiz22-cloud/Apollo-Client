@@ -1,4 +1,4 @@
-import VirtualConsultant from "@/app/Components/VirtualConsultant";
+import VirtualConsultant from "../../Components/VirtualConsultant";
 import {
   Activity,
   CheckCircle2,
@@ -72,7 +72,7 @@ const page = () => {
                 <span className="text-emerald-400">Specialties</span>
               </h1>
               <iframe
-                src="https://player.mux.com/MbIzOLcIlz3zxmdUumrXrV9vjF9jm02jvb6fBrewJnX8?accent-color=%23094acc"
+                src="https://player.mux.com/01zPzT01IBoK6J02702DoY00ot8YAJ5YQmNEQeC1ZCWGlQrc?accent-color=%23094acc"
                 className="w-[65%] mx-auto rounded-lg aspect-video"
                 allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;"
                 allowFullScreen
@@ -82,18 +82,18 @@ const page = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 px-2">
             {[
-              { title: "", name: "Cardiology", icon: <Activity /> },
-              { title: "", name: "Dermatology", icon: <Activity /> },
+              { title: "contact", name: "Cardiology", icon: <Activity /> },
+              { title: "contact", name: "Dermatology", icon: <Activity /> },
               { title: "dme", name: "DME Providers", icon: <TrendingUp /> },
-              { title: "", name: "Internal Medicine", icon: <FileText /> },
-              { title: "", name: "Neurology", icon: <Zap /> },
-              { title: "", name: "Ophthalmology", icon: <Stethoscope /> },
-              { title: "", name: "Orthopedics", icon: <CheckCircle2 /> },
-              { title: "", name: "Primary Care", icon: <UserCheck /> },
-              { title: "", name: "Pediatrics", icon: <Heart /> },
-              { title: "", name: "Psychiatry", icon: <Users /> },
-              { title: "", name: "Surgery Center", icon: <ClipboardCheck /> },
-              { title: "", name: "Urgent Care", icon: <Clock /> },
+              { title: "contact", name: "Internal Medicine", icon: <FileText /> },
+              { title: "contact", name: "Neurology", icon: <Zap /> },
+              { title: "contact", name: "Ophthalmology", icon: <Stethoscope /> },
+              { title: "contact", name: "Orthopedics", icon: <CheckCircle2 /> },
+              { title: "contact", name: "Primary Care", icon: <UserCheck /> },
+              { title: "contact", name: "Pediatrics", icon: <Heart /> },
+              { title: "contact", name: "Psychiatry", icon: <Users /> },
+              { title: "contact", name: "Surgery Center", icon: <ClipboardCheck /> },
+              { title: "contact", name: "Urgent Care", icon: <Clock /> },
             ].map((spec, idx) => (
               <Link
                 key={idx}

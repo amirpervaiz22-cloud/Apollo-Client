@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "@/app/globals.css";
+import "../globals.css";
 import { ToastContainer } from "react-toastify";
 
 // 2. Import the CSS (crucial!)

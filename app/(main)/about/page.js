@@ -1,4 +1,4 @@
-import VirtualConsultant from "@/app/Components/VirtualConsultant";
+import VirtualConsultant from "../../Components/VirtualConsultant";
 import { Award } from "lucide-react";
 import Image from "next/image";
 import React from "react";
