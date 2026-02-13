@@ -70,7 +70,7 @@ const page = () => {
             <div className="lg:w-1/2 relative">
               <div className=" w-[73%] inset-0 bg-blue-600 rounded-[40px] translate-x-16 translate-y-10 opacity-5"></div>
               <Image
-                src="/Human-Centric Financial.jpg"
+                src="/Human-Centric-Financial.jpg"
                 height={500}
                 width={500}
                 alt="Apollo Executive Team Meeting"
