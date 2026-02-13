@@ -91,7 +91,7 @@ const page = () => {
                   "Payer contract negotiation",
                   "Credentialing & payer enrollment",
                 ],
-                img: "Human-Centric Financial.jpg",
+                img: "Human-Centric-Financial.jpg",
                 reverse: false,
                 id:"DME"
               },
