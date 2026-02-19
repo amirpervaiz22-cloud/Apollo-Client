@@ -6,23 +6,38 @@ import React from "react";
 const page = () => {
   return (
     <div className="animate-in fade-in duration-1000">
-      <section className="pt-40  bg-white text-black">
-        <div className="flex flex-row-reverse">
-          <div className="text-blue-500  opacity-20 hidden lg:block">
-            <Award className="text-emerald-600" size={300} />
+      <section className="py-24 md:py-32 bg-white" id="Mission_Vision">
+        <div className="container  mx-auto md:px-6 px-3 flex flex-col-reverse md:flex-row  md:gap-24 gap-6  text-left">
+          <div className="md:w-[50%] md:mt-16">
+            <Image
+              src="/MissionAndVision.jpg"
+              height={500}
+              width={500}
+              alt="Apollo Mission and Vision."
+              className="rounded-xl h-fit w-fit shadow-2xl"
+            />
           </div>
-          <div className="container mx-auto px-6 relative z-10 text-center md:text-left">
-            <h1 className="text-4xl md:text-7xl font-black mb-10 tracking-tight leading-[1.1]">
-              Integrity In <span className="text-emerald-400">Revenue.</span>
-            </h1>
-            <p className="text-lg  text-gray-600 max-w-4xl leading-relaxed">
-              Apollo Medical Billing (AMB) was founded to bridge the gap between
-              complex insurance payer systems and the healthcare providers who
-              serve our communities.
-              <br /> We are committed to delivering accurate, transparent, and
-              compliant medical billing services across the United States,
-              ensuring your practice maximizes revenue without administrative
-              headaches.
+          <div className="md:w-[50%] mt-10 md:mt-0">
+            <div className="h-1.5 w-20 bg-blue-600 mb-10 rounded-full"></div>
+            <h2 className="text-xl md:text-5xl font-black text-slate-900 md:mb-10 tracking-tight">
+              Our Mission & Vision
+            </h2>
+            <p className="text-xs md:text-xl text-slate-600 mb-8 leading-relaxed font-medium">
+              Apollo Medical Billing aims to be the leading medical billing
+              service company in the USA by providing comprehensive revenue
+              cycle management for physician practices, Durable Medical
+              Equipment (DME) suppliers and clinical providers across California
+              and the nation.
+              <br /> We are committed to integrity, transparency, and full
+              regulatory compliance, delivering accurate CPT and ICD-10 coding
+              tailored to specialties including Cardiology, OB/GYN, Pediatrics,
+              Neurology and Mental Health. Through seamless integration with EMR
+              and practice management systems, we provide high-volume billing
+              solutions and advanced analytics for real-time insights into
+              denial management, AR performance, and claim monitoring. By
+              Staying vigilant and ethical, we empower healthcare providers to
+              streamline claim submissions, reduce denial rates, and improve
+              patient financial engagement across the entire revenue cycle.
             </p>
           </div>
         </div>
@@ -46,7 +61,7 @@ const page = () => {
               </p>
               <p className="text-xl text-slate-600 mb-12 leading-relaxed">
                 100% US-Based Support: Our team of senior billing strategists,
-                clinical coders, and data analysts is dedicated to one mission:
+                Clinical coders and data analysts are dedicated to one mission:
                 making your practice more profitable while ensuring compliance
                 with HIPAA, MACRA, and state regulations.
               </p>
@@ -73,49 +88,36 @@ const page = () => {
                 src="/Human-Centric-Financial.jpg"
                 height={500}
                 width={500}
-                alt="Apollo Executive Team Meeting"
+                alt="Apollo Executive Team Meeting."
                 className="rounded-[40px] shadow-2xl relative z-10"
               />
             </div>
           </div>
         </div>
       </section>
-      <section className="py-24 md:py-32 bg-white" id="Mission_Vision">
-        <div className="container  mx-auto md:px-6 px-3 flex flex-col-reverse md:flex-row  md:gap-24 gap-6  text-left">
-          <div className="md:w-[50%] md:mt-16">
-            <Image
-              src="/MissionAndVision.jpg"
-              height={500}
-              width={500}
-              alt="Apollo Mission and Vision"
-              className="rounded-xl h-fit w-fit shadow-2xl"
-            />
+
+      <section className="pt-40  bg-white text-black">
+        <div className="flex flex-row-reverse">
+          <div className="text-blue-500  opacity-20 hidden lg:block">
+            <Award className="text-emerald-600" size={300} />
           </div>
-          <div className="md:w-[50%] mt-10 md:mt-0">
-            <div className="h-1.5 w-20 bg-blue-600 mb-10 rounded-full"></div>
-            <h2 className="text-xl md:text-5xl font-black text-slate-900 md:mb-10 tracking-tight">
-              Our Mission & Vision
-            </h2>
-            <p className="text-xs md:text-xl text-slate-600 mb-8 leading-relaxed font-medium">
-              Apollo Medical Billing aims to be the leading medical billing
-              services company in the USA by providing comprehensive revenue
-              cycle management for physician practices, Durable Medical
-              Equipment (DME) suppliers, and clinical providers across
-              California and the nation.
-              <br /> We are committed to integrity, transparency, and full
-              regulatory compliance, delivering accurate CPT and ICD-10 coding
-              tailored to specialties including Cardiology, OB/GYN, Pediatrics,
-              Neurology, and Mental Health. Through seamless integration with
-              EMR and practice management systems, we provide high-volume
-              billing solutions and advanced analytics for real-time insights
-              into denial management, AR performance, and claim monitoring. By
-              staying vigilant and ethical, we empower healthcare providers to
-              streamline claim submissions, reduce denial rates, and improve
-              patient financial engagement across the entire revenue cycle.
+          <div className="container mx-auto px-6 relative z-10 text-center md:text-left">
+            <h1 className="text-4xl md:text-7xl font-black mb-10 tracking-tight leading-[1.1]">
+              Integrity In <span className="text-emerald-400">Revenue.</span>
+            </h1>
+            <p className="text-lg  text-gray-600 max-w-4xl leading-relaxed">
+              Apollo Medical Billing (AMB) was founded to bridge the gap between
+              complex insurance payer systems and the healthcare providers who
+              serve our communities.
+              <br /> We are committed to delivering accurate, transparent, and
+              compliant medical billing services across the United States,
+              ensuring your practice maximizes revenue without administrative
+              headaches.
             </p>
           </div>
         </div>
       </section>
+
       <section className="bg-gray-50 py-16" id="Privacy_Security">
         <div className="max-w-7xl mx-auto px-6">
           {/* Header */}
@@ -153,7 +155,7 @@ const page = () => {
               </h3>
               <p className="text-gray-600">
                 Our medical billing company uses encrypted data transmission,
-                secure servers, and advanced cybersecurity measures to protect
+                secure servers and advanced cybersecurity measures to protect
                 patient records, insurance data, and billing information.
               </p>
             </div>
@@ -166,7 +168,7 @@ const page = () => {
               <p className="text-gray-600">
                 Access to sensitive healthcare and billing data is restricted
                 through role-based permissions, ensuring only authorized and
-                trained medical billing professionals can access PHI.
+                Trained medical billing professionals can access PHI.
               </p>
             </div>
 
