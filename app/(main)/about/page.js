@@ -6,7 +6,7 @@ import React from "react";
 const page = () => {
   return (
     <div className="animate-in fade-in duration-1000">
-      <section className="py-24 md:py-32 bg-white" id="Mission_Vision">
+      <section className="pt-20 md:pt-32 py-12 bg-white" id="Mission_Vision">
         <div className="container  mx-auto md:px-6 px-3 flex flex-col-reverse md:flex-row  md:gap-24 gap-6  text-left">
           <div className="md:w-[50%] md:mt-16">
             <Image
