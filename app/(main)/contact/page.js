@@ -62,7 +62,7 @@ const page = () => {
 
               <div className="space-y-10 mt-16">
                 <div>
-                  <a href="tel:9094608170">
+                  <a href="tel:9096521000">
                     <div className="flex gap-8 group">
                       <div className="w-16 h-16 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-sm shadow-blue-200">
                         <Phone size={28} />
@@ -72,7 +72,7 @@ const page = () => {
                           Direct Line
                         </h4>
                         <p className="text-2xl font-medium text-slate-600">
-                          (909) 460-8170
+                          (909) 652-1000
                         </p>
                         <p className="text-sm text-slate-400 mt-1 font-bold">
                           Mon - Fri • 8AM - 6PM EST
