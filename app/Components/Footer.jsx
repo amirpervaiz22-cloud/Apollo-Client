@@ -40,7 +40,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="w-12 h-12 bg-white/5 rounded-2xl flex items-center justify-center hover:bg-blue-600 cursor-pointer transition-all duration-300 border border-white/10">
-                <a href="tel:9094608170">
+                <a href="tel:9096521000">
                   <Phone size={20} />
                 </a>
               </div>
