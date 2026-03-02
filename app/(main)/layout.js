@@ -75,6 +75,10 @@ export default function RootLayout({ children }) {
         <Footer />
         <ToastContainer position="top-right" />
       </body>
+        <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+  o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+  o.onload=function(){window.trackingFunctions.onLoad({appId:"68b5f81636ed5d001d45b3e8"})},
+  document.head.appendChild(o)}initApollo();</script>
     </html>
   );
 }
