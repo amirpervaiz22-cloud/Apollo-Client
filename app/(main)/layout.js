@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
+import Script from "next/script"
 import { ToastContainer } from "react-toastify";
 
 // 2. Import the CSS (crucial!)
@@ -63,10 +64,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
-  o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
-  o.onload=function(){window.trackingFunctions.onLoad({appId:"68b5f81636ed5d001d45b3e8"})},
-  document.head.appendChild(o)}initApollo();</script>
+    
       <body
       suppressHydrationWarning={true}
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -78,6 +76,17 @@ export default function RootLayout({ children }) {
         </main>
         <Footer />
         <ToastContainer position="top-right" />
+        <Script id="apollo-tracking" strategy="afterInteractive">
+          {`
+            function initApollo(){
+              var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+              o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+              o.onload=function(){window.trackingFunctions.onLoad({appId:"68b5f81636ed5d001d45b3e8"})},
+              document.head.appendChild(o)
+            }
+            initApollo();
+          `}
+        </Script>
       </body>
         
     </html>
